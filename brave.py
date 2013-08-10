@@ -692,6 +692,14 @@ def notspacedicks(comment, body):
 	return None
 
 
+# this rule is brought to you by /u/xvvhiteboy
+def grammar(comment, body):
+lc = body.lower()
+if lc=="your the":
+return("Your* Sorry I am a bit of a grammar nazi", comment)
+return None
+
+
 #This rule brought to you by: /u/Muzilos
 def leXKCD(comment, body):
 	if random.randint(0,5) != 0: return None
